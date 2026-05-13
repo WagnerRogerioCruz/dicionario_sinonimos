@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
+    <title>Dicionario</title>
+</head>
+<body>
+    <div class="container-principal">
+
+        <div class="grid">
+            <h2>Dicionário</h2>
+            <p>Exemplo do uso do Map</p>
+            <p>(Inclusão da palavra e seu significado)</p>
+
+            <input type="text" id="palavra" placeholder="digite a palavra...">
+            <input type="text" id="significado" placeholder="digite o significado">
+            <button onclick="incluir()">Incluir</button>
+        </div>
+        
+        <div class="grid">
+            <h3>Palavras cadastradas</h3>
+            <ul id="lista"></ul>
+        </div>
+        
+        <div class="grid">
+            <p>Exemplo do uso do Map</p>
+            <p>(Pesquisa o significado da palavra)</p>
+
+            <input type="text" id="pesquisa" placeholder="digite palavra a pesquisar...">
+            <button onclick="pesquisar()">Pesquisar</button>
+            <p id="resultado"></p>
+        </div>
+    </div>
+    
+    <div id="popup" class="popup">✅ Inclusão efetuada</div>
+
+    <script src="./dicionario.js"></script>
+
+</body>
+
+</html>
