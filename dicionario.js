@@ -5,9 +5,10 @@ function incluir() {
     let palavra = document.getElementById("palavra").value.toLowerCase().trim()
     let significado = document.getElementById("significado").value.trim()
     
-
-    dicionario.set(palavra, significado)
-
+    if (palavra && significado) {
+        dicionario.set(palavra, significado)
+    
+    
     document.getElementById("palavra").value = ""
     document.getElementById("significado").value = ""
     mostrarPopup("✅ Inclusão efetuada")
@@ -16,7 +17,10 @@ function incluir() {
     salvarDados()
     atualizarLista()
 }
-
+else {
+    alert("preencha palavra e significado!")    
+}
+}
   
 function  pesquisar() {
 
